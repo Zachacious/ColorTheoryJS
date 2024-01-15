@@ -1,2 +1,15 @@
-# ColorTheoryJS
-A small library for generating color themes as css from a single base color
+# color-lib
+
+To install dependencies:
+
+```bash
+bun install
+```
+
+To run:
+
+```bash
+bun run index.ts
+```
+
+This project was created using `bun init` in bun v1.0.22. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.

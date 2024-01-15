@@ -1,36 +1,22 @@
 {
-  "name": "colortheoryjs",
-  "module": "dist/esm/index.js",
-  "main": "dist/lib.cjs.js",
-  "browser": "dist/lib.umd.js",
+  "name": "color-lib",
+  "main": "dist/color-lib.js",
+  "module": "dist/color-lib.mjs",
+  "typings": "dist/color-lib.d.ts",
   "type": "module",
-  "version": "0.0.1",
-  "description": "A library for working with color theory in JavaScript.",
   "scripts": {
-    "build": "rimraf dist && tsc && rollup -c rollup.config.js --bundleConfigAsCjs"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest --watchAll"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "@typescript-eslint/eslint-plugin": "^6.18.1",
-    "eslint": "^8.56.0",
-    "eslint-config-standard-with-typescript": "^43.0.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.1.1",
-    "rollup-plugin-eslint": "^7.0.0",
-    "typescript": "^5.3.3"
+    "esbuild": "^0.19.11",
+    "rollup": "^4.9.5",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-esbuild": "^6.1.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-typescript": "^11.1.6",
-    "@typescript-eslint/parser": "^6.18.1",
-    "deepmerge": "^4.3.1",
-    "prettier": "^3.2.2",
-    "rimraf": "^5.0.5",
-    "rollup-plugin-prettier": "^4.1.1"
   }
 }
